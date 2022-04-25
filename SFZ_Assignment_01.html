@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            background-color: #ce0505;
+            height: 60px;
+            cursor: pointer;
+        }
+        .logo{
+            border: #ce0505 solid;
+            background-color: white;
+            border-radius: 100%;
+            color: #ce0505;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left:105px ;
+            margin-top: 4px;
+            display: inline-block;
+            font-size: 40px;
+        }
+         .Login{
+             position: relative;
+             left: 805px;
+             padding: 10px;
+             bottom: 5px;
+         }
+         .Create{
+           position: relative;
+           left: 805px;
+           border: 1px solid white;
+           padding: 5px 10px 5px;
+           bottom: 5px;
+         }
+         a{
+             text-decoration: none;
+             color: white;
+
+         }
+         .layout{
+             background-color: #fbfbfb;
+         }
+         .filter{
+             background-color: white;
+             position: relative;
+             top: 100px;
+             left: 130px;
+             width: 260px;
+             height: 700px;
+             box-shadow: 0px 3px 5px #bfbfbf;
+         }
+         .filter-heading{
+             padding: 20px 20px 0px;
+         }
+         .select-location{
+             position: relative;
+             bottom: 5px;
+             padding: 20px 20px 0px;
+             letter-spacing: 0px;
+             color: #192F60;
+             
+         }
+         input{
+             position: relative;
+             left: 20px;
+             top: 12px;
+             border: 1px solid #8C96AB;
+             border-radius: 3px;
+             
+         }
+         .style{
+             width: 208px;
+             height: 20px;
+         }
+         .heading{
+             color: #182f60;
+             margin: 0;
+             position: absolute;
+             left: 113px;
+             padding: 60px 25px 10px;
+             top: 25px;
+        
+         }
+         .cuisine1{
+             color: #192f60;
+          position: relative;
+          top: 20px;  
+          left: 20px;
+    
+         }
+         label{
+             display: list-item;
+             list-style: none;
+             position: relative;
+             left: 40px;
+             top: 30px;
+             color: #8C96AB;
+         }
+         .cost{
+             position: relative;
+             bottom: -15px;
+             padding: 20px 0px 0px 20px;
+
+         }
+         .sort{
+             position: relative;
+             left: 20px;
+             top: 20px;
+         }
+         .side-upper{
+             background-color: white;
+             position: relative;
+             height: 270px;
+             width: 800px;
+             left: 450px;
+             bottom: 600px;
+             box-shadow: 0px 3px 5px #bfbfbf;
+             
+         }
+         .side-bottom{
+             background-color: white;
+             position: relative;
+             height: 270px;
+             width: 800px;
+             left: 450px;
+             bottom: 560px;
+             box-shadow: 0px 3px 5px #bfbfbf;
+         }
+         img{
+             height: 100px;
+             width: 100px;
+             border-radius: 20px;
+             position: relative;
+             left: 20px;
+             top: 18px;
+             opacity: 1;
+        
+         }
+         .upper{
+             margin-left: 150px;
+             position: relative;
+             bottom: 65px;
+             letter-spacing: 0px;
+             color: #192F60;
+        
+         }
+         .fort{
+             margin-left: 156px;
+             position: relative;
+             bottom: 60px;
+         }
+         h2{
+             text-align: left;
+             color: #192F60;
+         }
+         h5{
+             color: #192f60;
+         }
+         p{
+             color: #636f88;
+         }
+         .address{
+             margin-left: 156px;
+             position: relative;
+             bottom: 55px;
+         }
+         hr{
+             margin-left: 25px;
+             margin-right: 25px;
+             position: relative;
+             bottom: 27px;
+         }
+         table{
+             margin-left: 25px;
+             position: relative;
+             bottom: 8px;
+         }
+         td{
+             padding: 2px;
+             color: #636f88;
+         }
+         th{
+             position: relative;
+             left: 11px;
+             padding: 0px 0px 5px 10px;
+             color: #192F60;
+
+         }
+         .rupee{
+             position: absolute;
+             left: 110px;
+             width: 100px;
+         }
+         .number{
+             position: relative;
+             left: 640px;
+             bottom: 505px;
+
+         }
+         li{
+             list-style: none;
+             display: inline;
+             border: 1px solid #bfbfbf;
+             padding: 10px 15px 10px 15px;
+             margin: 4px;
+             border-radius: 7px;
+         }
+         .n1{
+            background: #8C96AB 0% 0% no-repeat padding-box;
+            border: 1px solid #8C96AB;
+
+         }
+         
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       <span class="logo" >e!</span>
+       <a herf="login.html" class="Login">Login
+       <a herf="create.html" class="Create">Create an account</a>
+    </div>
+    <div class="layout">
+        <h1 class="heading">Brackfast Place in Mumbai</h1>
+
+        <div class="filter">
+            <h3 class="filter-heading">Filters</h3>
+            <p class="select-location">Select location</p>
+            <input list="place"  name="place" placeholder=" Select location">
+            <datalist id="place">
+                <option>Mumbai</option>
+                <option>New Delhi</option>
+                <option>Bihar</option>
+                <option>Goa</option>
+            </datalist>
+            <div class="cuisine">
+                <h4 class="cuisine1">Cuisine</h4>
+                <label for="cuisine">North Indian</label>
+                <input type="checkbox" name="North Indian">
+                <label for="cuisine">South Indian</label>
+                <input type="checkbox" name="North Indian" checked>
+                <label for="cuisine">Chinees</label>
+                <input type="checkbox" name="North Indian" checked>
+                <label for="cuision">Fast Food</label>
+                <input type="checkbox" name="North indian">
+                <label for="cuision">Street Food</label>
+                <input type="checkbox" name="North indian">
+
+            </div>
+            <div class="Cost1">
+                <h4 class="cost">Cost For Two</h4>
+                <label for="cuisine">Less then ` 500</label>
+                <input type="radio" name="North Indian">
+                <label for="cuisine">` 500 to ` 1000 </label>
+                <input type="radio" name="North Indian">
+                <label for="cuisine">` 1000 to ` 1500</label>
+                <input type="radio" name="North Indian">
+                <label for="cuision">` 1500 to ` 2000</label>
+                <input type="radio" name="North indian">
+                <label for="cuision">` 2000+</label>
+                <input type="radio" name="North indian">
+                
+            </div>
+            <div class="Sort">
+                <h4 class="sort">Sort</h4>
+                <label for="cuisine">Price low to high</label>
+                <input type="radio" name="North Indian">
+                <label for="cuisine">Price high to low </label>
+                <input type="radio" name="North Indian">
+
+            </div>
+        </div>
+        <div class="side-upper">
+            <img src="./images/Image.jpg">
+            <h2 class="upper">The Big Chill Cakery</h2>
+            <h5 class="fort">FORT</h5>
+            <p class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi ...</p>
+            <hr>
+            <table>
+                <tr>
+                <td>CUISINES:</td>
+                <th>Bakery</th>
+                </tr>
+                <tr>
+                    <td>COST FOR TWO:</td>
+                    <th class="rupee">₹700</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="side-bottom">
+            <img src="./images/Image.jpg">
+            <h2 class="upper">The Bake Shop</h2>
+            <h5 class="fort">FORT</h5>
+            <p class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi ...</p>
+            <hr> 
+            <table>
+                <tr>
+                <td>CUISINES:</td>
+                <th>Bakery</th>
+                </tr>
+                <tr>
+                    <td>COST FOR TWO:</td>
+                    <th class="rupee">₹700</th>
+                </tr>
+            </table>
+        </div>
+        <div class="number">
+            <ul>
+                <li><</li>
+                <li class="n1">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>></li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>
